@@ -31,22 +31,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 194px;
+    height: 194px;
+    margin: 3px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
 }
 .menu-bar-wrap .menu-bar-disc .title{
     position:absolute;
-    top:10px;
-    left:15px;
+    top: 15px;
+    left: 15px;
 }
 .menu-bar-wrap .menu-bar-disc .title h2{
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.3);
     font-size: 25px;
-    line-height: 25px;
+    line-height: 1;
 }
 .menu-bar-wrap .menu-bar-disc .title span{
     color: rgba(0, 0, 0, 0.4);
@@ -58,6 +58,7 @@ body {
     height: 41px;
     padding: 8px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .menu-bar span {
@@ -65,10 +66,10 @@ body {
     top: 0;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #fff;
     transform-origin: center;
-    border-radius: 2px;
+    border-radius: 3px;
     margin-top: 9px;
 }
 
@@ -93,11 +94,11 @@ body {
 }
 
 .bar-type-1.active span:nth-child(1) {
-    transform: translate3d(0, 6px, 0) rotate(45deg);
+    transform: translate3d(0, 5px, 0) rotate(45deg);
 }
 
 .bar-type-1.active span:nth-child(2) {
-    transform: translate3d(0px, -5px, 0) rotate(-45deg);
+    transform: translate3d(0px, -7px, 0) rotate(-45deg);
 }
 
 .bar-type-1.active span:nth-child(3) {
@@ -123,7 +124,7 @@ body {
 
 .bar-type-2.active span:nth-child(2) {
     width: 100%;
-    transform: translate3d(0, 0, 0) rotate(-225deg);
+    transform: translate3d(0, -1px, 0) rotate(-225deg);
 }
 
 .bar-type-2.active span:nth-child(3) {
@@ -158,7 +159,7 @@ body {
 
 .bar-type-3.active span.second:nth-child(2) {
     width: 100%;
-    transform: translateY(0px) rotate(-45deg);
+    transform: translateY(-1px) rotate(-45deg);
     transition-delay: 0.1s;
 }
 
@@ -187,7 +188,7 @@ body {
 }
 
 .bar-type-4.active span.second:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
 }
 
 
@@ -204,16 +205,17 @@ body {
 
 .bar-type-5.active span:nth-child(1) {
     width: 50%;
-    transform: translate3d(-1px, 11px, 0) rotate(315deg);
+    transform: translate3d(-2px, 12px, 0) rotate(315deg);
 }
 
 .bar-type-5.active span:nth-child(2) {
     width: 100%;
+    transform: translate3d(-2px,-1px,0);
 }
 
 .bar-type-5.active span:nth-child(3) {
     width: 50%;
-    transform: translate3d(0, -12px, 0) rotate(-315deg);
+    transform: translate3d(0, -13px, 0) rotate(-315deg);
 }
 
 
@@ -228,12 +230,12 @@ body {
 }
 
 .bar-type-6.active span:nth-child(1) {
-    transform: translateY(11px) rotate(135deg);
+    transform: translateY(5px) rotate(135deg);
 }
 
 .bar-type-6.active span:nth-child(2) {
     width: 100%;
-    transform: translateY(0px) rotate(45deg);
+    transform: translateY(-7px) rotate(45deg);
 }
 
 .bar-type-6.active span:nth-child(3) {
