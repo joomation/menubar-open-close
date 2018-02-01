@@ -6,24 +6,24 @@
 
 
 /* layout */
-
+html{
+    height:100%;
+}
 body {
     background-color: #0092eb;
+    height: 100%;
 }
 
 .menu-bar-wrap {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     flex-wrap: wrap;
     max-width: 600px;
     max-height: 400px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 100px 20px 0;
 }
 
 .menu-bar-wrap .menu-bar-disc {
@@ -243,3 +243,8 @@ body {
     transform: translateY(-12px) rotate(-315deg);
 }
 
+@media screen and (max-width: 450px) {
+    .menu-bar-wrap{
+        padding:20px;
+    }
+}
