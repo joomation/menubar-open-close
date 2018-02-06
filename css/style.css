@@ -6,12 +6,8 @@
 
 
 /* layout */
-html{
-    height:100%;
-}
 body {
     background-color: #0092eb;
-    height: 100%;
 }
 
 .menu-bar-wrap {
@@ -263,6 +259,6 @@ body {
         margin-bottom: 20px;
     }
     .title h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 }

@@ -79,6 +79,7 @@
 </body>
 <script>
     function menuToggle(type, e) {
+        e.stopPropagation();
         var element = e.currentTarget;
         element.classList.toggle("active");
         if (type === 'twoMotions') {
@@ -89,7 +90,6 @@
     function secondAction(element) {
         var children = element.children;
         for (var i = 0; i < children.length; i++) {
-
             one(children[i], "transitionend", handler.bind(this, children));
         }
 
@@ -97,7 +97,6 @@
     }
 
     function handler(element) {
-        console.log(element)
         for (var i = 0; i < element.length; i++) {
             if (element[i].classList.contains('second')) {
                 element[i].classList.remove('second')
