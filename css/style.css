@@ -21,17 +21,17 @@ body {
     padding: 20px;
     top: 15%;
 }
-.title{
+.menu-bar-wrap > .title{
     width:100%;
     text-align: center;
     margin-bottom: 30px;
 }
-.title h1{
+.menu-bar-wrap > .title h1{
     color:#fff;
     font-size: 32px;
     word-break: keep-all;
 }
-.title p{
+.menu-bar-wrap > .title p{
     color:rgba(255, 255, 255, 0.5);
 }
 .menu-bar-wrap .menu-bar-disc {
@@ -255,10 +255,10 @@ body {
     .menu-bar-wrap{
         top: 0;
     }
-    .title{
+    .menu-bar-wrap > .title{
         margin-bottom: 20px;
     }
-    .title h1{
+    .menu-bar-wrap > .title h1{
         font-size: 20px;
     }
 }
