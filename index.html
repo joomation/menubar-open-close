@@ -79,6 +79,7 @@
 </body>
 <script>
     function menuToggle(type, e) {
+        e.preventDefault();
         e.stopPropagation();
         var element = e.currentTarget;
         element.classList.toggle("active");
