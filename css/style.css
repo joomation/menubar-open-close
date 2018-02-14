@@ -11,6 +11,7 @@ html,body{
 body {
     background-color: #0092eb;
     overflow: auto;
+    -webkit-transform:translate3d(0, 0, 0);
 }
 
 .menu-bar-wrap {
