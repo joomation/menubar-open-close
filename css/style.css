@@ -93,6 +93,7 @@ body {
     position:absolute;
     top: 15px;
     left: 15px;
+    text-align: left;
 }
 .menu-bar-wrap .menu-bar-disc .title h2{
     color: rgba(255, 255, 255, 0.3);
